@@ -36,12 +36,35 @@ const slides = document.querySelectorAll('.slideshow');
 slides.forEach(s => new Slider(s, interval));
 ```
 
+## Example
+```html
+<div class="slideshow">
+  <figure>
+    <!-- self-referenced link -->
+    <a id="a-classic" href="#a-classic">
+      <img loading="lazy" src="https://cadars.github.io/photosheet/img/john-margolies/A classic.jpg" alt="A classic" title="A classic" />
+    </a>
+  </figure>
+
+  <div>
+    <a id="hello-world" href="#hello-world">
+      <h1>Hello World</h1>
+    </a>
+  </div>
+</div>
+```
+
+
+## How it works
+
+Slider uses native CSS scroll snap for positioning and smooth scrolling transitions. The slider auto-advances through slides based on the interval, pauses on hover, and syncs with manual scrolling.
+
 ## Features
 
 - Lightweight (~1KB gzipped)
 - Zero dependencies
-- CSS-driven animations
-- Fully customizable via CSS variables
+- Native scroll snap positioning
+- Smooth scroll transitions
 
 ## License
 
