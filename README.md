@@ -21,7 +21,7 @@ import Slider from '@jocampo3/slider';
 import '@jocampo3/slider/styles.css';
 
 const interval = 3500; // update to your interval value
-const slider = new Slider('#my-slider');
+const slider = new Slider('#my-slider', interval);
 ```
 
 ### Multiple Sliders
