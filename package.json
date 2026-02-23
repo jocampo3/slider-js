@@ -1,0 +1,31 @@
+{
+  "name": "@jocampo3/slider",
+  "version": "1.0.2",
+  "description": "Simple, reusable content carousel. Built with CSS and minimal JavaScript.",
+  "keywords": [
+    "slider"
+  ],
+  "homepage": "https://github.com/jocampo3/slider-js#readme",
+  "bugs": {
+    "url": "https://github.com/jocampo3/slider-js/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jocampo3/slider-js.git"
+  },
+  "license": "ISC",
+  "author": "Jose Ocampo",
+  "type": "commonjs",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./styles.css": "./styles.css"
+  },
+  "files": [
+    "index.js",
+    "styles.css"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
