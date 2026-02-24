@@ -1,12 +1,17 @@
 export default class Slider {
-  constructor(slider, interval) {
+  constructor(slider, interval, includeButtons) {
     this.slider = slider;
     this.slides = this.slider.children;
     this.index = 0;
     this.interval = interval;
     this.timer = null;
+    if (includeButtons === true) { this.addButtons(this.slider); }
     this.restartTimer();
     this.addListeners();
+  }
+
+  addButtons(slider) {
+    slider.classList.add('js-buttons');
   }
 
   slideWidth() {

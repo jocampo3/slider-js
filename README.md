@@ -21,7 +21,8 @@ import Slider from '@jocampo3/slider';
 import '@jocampo3/slider/styles.css';
 
 const interval = 3500; // update to your interval value
-const slider = new Slider('#my-slider', interval);
+const slider = document.getElementById('my-slider');
+new Slider(slider, interval);
 ```
 
 ### Multiple Sliders
@@ -32,8 +33,9 @@ import '@jocampo3/slider/styles.css';
 
 const interval = 3500; // update to your interval value
 const slides = document.querySelectorAll('.slideshow');
+const includeButtons = true; // creates pseudo buttons for better UI
 
-slides.forEach(s => new Slider(s, interval));
+slides.forEach(s => new Slider(s, interval, includeButtons));
 ```
 
 ## Example
@@ -65,6 +67,7 @@ Slider uses native CSS scroll snap for positioning and smooth scrolling transiti
 - Zero dependencies
 - Native scroll snap positioning
 - Smooth scroll transitions
+- Button Support
 
 ## License
 
