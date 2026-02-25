@@ -33,14 +33,14 @@ import '@jocampo3/slider/styles.css';
 
 const interval = 3500; // update to your interval value
 const slides = document.querySelectorAll('.slideshow');
-const includeButtons = true; // creates pseudo buttons for better UI
 
-slides.forEach(s => new Slider(s, interval, includeButtons));
+slides.forEach(s => new Slider(s, interval);
 ```
 
 ## Example
 ```html
-<div class="slideshow">
+<!-- NOTE: To enable buttons, include the 'js-buttons' class on the slideshow div -->
+<div class="slideshow js-buttons"> 
   <figure>
     <!-- self-referenced link -->
     <a id="a-classic" href="#a-classic">
