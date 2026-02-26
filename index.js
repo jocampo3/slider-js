@@ -36,9 +36,14 @@ export default class Slider {
     this.slider.addEventListener('scroll', () => {
       this.index = this.getCurrentIndex();
     })
+
     this.slider.addEventListener('mouseenter', () => {
       clearInterval(this.timer);
     });
+
+    this.slider.addEventListener('touchstart', () => {
+      clearInterval(this.timer);
+    })
 
     this.slider.addEventListener('mouseleave', () => {
       this.restartTimer();
