@@ -34,7 +34,7 @@ import '@jocampo3/slider/styles.css';
 const interval = 3500; // update to your interval value
 const slides = document.querySelectorAll('.slideshow');
 
-slides.forEach(s => new Slider(s, interval);
+slides.forEach(s => new Slider(s, interval));
 ```
 
 ## Example
