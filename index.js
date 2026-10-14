@@ -24,6 +24,15 @@ export default class Slider {
     this.restartTimer();
   }
 
+  prev() {
+    if (this.index === 0) {
+      this.goTo(this.slides.length);
+      return;
+    } else {
+      this.goTo(this.index - 1);
+    }
+  }
+
   next() {
     this.goTo(this.index + 1);
   }
